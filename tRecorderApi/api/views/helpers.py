@@ -4,7 +4,6 @@ import urllib2
 import os
 import hashlib
 import zipfile
-
 from api.models import Take, Language, Book, User, Comment
 from django.forms.models import model_to_dict
 
@@ -182,7 +181,7 @@ def prepareDataToSave(meta, abpath, data, is_source=False):
         #dic["take"] = model_to_dict(take)
     return dic
 
-
+# run at startup
 def getLanguageByCode(code):
     url = 'http://td.unfoldingword.org/exports/langnames.json'
     languages = []
