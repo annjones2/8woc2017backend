@@ -120,7 +120,7 @@
     function jspost(url, data, success, error) {
         var xmlhttp = new XMLHttpRequest(); // new HttpRequest instance
         xmlhttp.open("POST", url);
-        xmlhttp.responseType = "blob"
+        //xmlhttp.responseType = "blob"
 
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == XMLHttpRequest.DONE) {
